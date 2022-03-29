@@ -1,0 +1,532 @@
+.video-acer {
+  max-width: 100%;
+    overflow: hidden;
+    z-index: -110;
+    top: 0;
+}
+.divider {
+  height: 15px;
+  width: 1px;
+  background: rgb(226, 226, 226);
+  clear: none;
+  margin-top: 15px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 0;
+  margin-bottom: 13px;
+}
+.row-divider {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.flag {
+  width: 21px;
+  height: 12px;
+  display: block;
+  float: left;
+  margin-top: 13px;
+  margin-right: 10px;
+}
+
+.header-fontsize {
+  font: 0.975rem sans-serif;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+.header-fontsize:hover {
+  opacity: 1;
+}
+
+.header_right {
+  line-height: 40px;
+  margin: 0;
+}
+
+.logo {
+  margin: 4px 8px;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  opacity: 0.4;
+  transition: all 0.3s;
+}
+
+.logo:hover {
+  opacity: 1;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.row_gutter {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-bottom: 0;
+}
+.col_gutter {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.button {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+}
+.button_explore1 {
+  padding: 12px 24px;
+  background-color: #00000000;
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+  border: 2px solid #ffffff;
+  position: relative;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.button_explore1:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.button_explore2 {
+  padding: 12px 24px;
+  background-color: #00000000;
+  color: rgb(0, 0, 0);
+  border-radius: 4px;
+  border: 2px solid #000000;
+  position: relative;
+}
+.button_explore2:hover {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.button_lm {
+  padding: 12px 40px;
+  background-color: #00000000;
+  border-radius: 4px;
+  border: 2px solid #000000;
+  position: relative;
+  
+}
+.button_lm:hover {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.label {
+  position: relative;
+  color: rgb(255, 255, 255);
+  padding: 4px 8px;
+  background-color: #000000;
+}
+
+.row-button{
+  position: relative;
+  top: -13vw; 
+  left: 0; 
+  right: 0;
+}
+
+.row-text{
+  position: relative;
+  bottom: 38vw;
+  left: 0; 
+  right: 0;
+}
+
+.div-outline{
+  padding: 0;
+  margin: 0;
+}
+
+.parent {
+  text-align: center;
+  width: fit-content;
+}
+
+.child {
+  width: auto;
+  height: 12vw;
+  background-position: center;
+  background-size: cover;
+  transition: all .3s;
+}
+
+.parent:hover .child,
+.parent:focus .child {
+  transform: scale(1.1);
+  transition: all .3s;
+}
+.bg-white{
+  background-color: #ffffff;
+  width: 100%;
+  height: auto;
+}
+.bg-gray{
+  background-color: gray;
+  width: 100%;
+  height: auto;
+}
+.empty-box{
+  width: 300px;
+  height: 70px;
+}
+.text-color{
+  color: honeydew;
+}
+
+
+/* acer slide overlay */
+/*  */
+/*  */
+.con-slide {
+  position: relative;
+  overflow: hidden;  
+  /* background-color: black; */
+}
+
+.image-behind {
+    height: auto;
+    width: 25vw;
+    transition: 0.8s ease;
+    background-color: black;
+    height: auto;
+}
+.con-slide:hover .image-behind{
+  transform: scale(1.04);
+}
+.overlay-1 {
+  /* text-up */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 25vw;
+  height: 80%;
+  display: inherit;
+  opacity: 0;
+  transition: all .3s ease;
+}
+.con-slide:hover .overlay-1 {
+  height: 100%;
+  opacity: 1;
+}
+.overlay-2 {
+  /* bg */
+  background-color: rgb(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 25vw;
+  opacity: 0;
+  transition: .3s ease;
+}
+.con-slide:hover .overlay-2 {
+  opacity: 0.8;
+}
+.overlay-3 {
+  /* text-down */
+  opacity: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 25vw;
+  display: inherit;
+  opacity: 1;
+  transition: all .33s;
+}
+.con-slide:hover .overlay-3 {
+  opacity: 0;
+}
+
+.text-overlay3 {
+  color: white;
+  font-size: 1.3vw;
+  min-width: fit-content;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -25%);
+  text-align: center;
+}
+
+.text-overlay1 {
+  color: white;
+  font-size: 1.1vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*  */
+/*  */
+/* acer slide overlay */
+.footertext{
+  text-decoration: none;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  padding: 1rem 0 0 0;
+  margin: 0;
+  /* padding: 1rem 0 0 0; */
+}
+.footertext a:hover{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+}
+.footertext:hover{
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer_logo_divider{
+  margin-bottom: 3rem;
+  padding-bottom: 1rem!important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+.footer_logo{
+    margin: 5px 15px 5px 15px;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+
+.social_logo {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  opacity: 0.8;
+  transition: all 0.1s;
+}
+
+.social_logo:hover {
+  opacity: 1;
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.top-auto{top:auto}
+
+.item_link:hover{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  opacity: 1;
+}
+
+.item_text{
+  opacity: 0.9;
+}
+
+.item_link:hover .item_text{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  opacity: 1;
+}
+
+.nb-text{
+  font-size: 0.875rem;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.4);
+  padding: 0.8rem 0 0 0;
+  margin: 0;
+  list-style: none;
+  transition: all 0.3s;
+}
+
+.nb-text:hover{
+  color: rgba(0, 0, 0, 0.795);
+}
+
+.nb-head-text{
+  font-size: 1rem;
+  list-style: none;
+  margin-top: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  
+}
+.nb-text>a{
+  text-decoration: none;
+}
+
+.nb-text>a:link{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.nb-text>a:hover{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.nb-text-nohover{
+  font-size: 0.875rem;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.4);
+  padding: 0.8rem 0 0 0;
+  margin: 0;
+  list-style: none;
+}
+.nb-text-nohover:hover{
+  font-size: 0.875rem;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.4);
+  padding: 0.8rem 0 0 0;
+  margin: 0;
+  list-style: none;
+}
+.nb-text-nohover>a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.nb-text-nohover>a:link{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.nb-text-nohover>a:hover{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+
+.supportbtn{
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .3s;
+    position: relative;
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 700;
+    height: 42px;
+    margin: 1rem 0;
+    background-color: #eeeeee;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    line-height: 1;
+    outline: 0;
+    padding-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.75rem;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    touch-action: manipulation;
+}
+.supportbtn:hover{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.4);
+  background-color:rgb(192, 192, 192);
+}
+
+/*back to top button*/
+#button {
+  display: inline-block;
+  background-color: #6d6d6dad;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 40px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "^";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+  text-decoration: none;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+/*back to top button*/
+.ConceptD-slide {
+  position: relative;
+  width: 100%;
+  
+}
+.for-con-pic{
+	position: relative;
+}
+.ConceptD-pic {
+  position: relative;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .6s ease;
+}
+
+.ConceptD-slide:hover .ConceptD-pic {
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+}
+
+.slide-top {
+  white-space: nowrap; 
+  color: white;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
