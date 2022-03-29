@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="planet9.css">
+    <link rel="icon" href="https://www.planet9.gg/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;700;900&amp;display=swap">
+    <title>PLANET9 | Master Your Play | Esport Social Platform</title>
+</head>
+
+<body>
+    <header id="myHeader">
+        <nav class="navbar">
+            <div class="container">
+                <img src="planet9_img/logohead.webp">
+                <div class="row">
+                    <div class="col"><b>Global</b></div>
+                    <div style="opacity: 0.6; font-size: 16px; font-weight: 100;"><b><i>English</i></b></div>
+                    <div class="col dropmenu"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="10" viewBox="0 0 12 8">
+                            <path class="dropsym" onclick="openDropdown()" fill="#FFF" fill-rule="evenodd" d="M5.998 7.993L-.008.007h12.013L5.998 7.993z">
+                            </path>
+                        </svg>
+                        <div>
+                            <div class="dropdark">
+                                <div class="item"><a class="languageLink" href="javascript:void(0)"><span>Australia<i>English</i></span></a></div>
+                                <div class="item"><a class="languageLink" href="javascript:void(0)"><span>Austria<i>Deutsch</i></span></a></div>
+                                <div class="item"><a class="languageLink" href="javascript:void(0)"><span>Brazil<i>português</i></span></a></div>
+                                <div class="item"><a class="languageLink" href="javascript:void(0)"><span>Canada<i>English</i></span></a></div>
+                                <div class="item"><a class="languageLink" href="javascript:void(0)"><span>Canada<i>français</i></span></a></div>
+                                <div class="item"><a class="languageLink" href="javascript:void(0)"><span>Chile<i>español</i></span></a></div>
+                                <div class="item"><a class="languageLink" href="javascript:void(0)"><span>Colombia<i>español</i></span></a></div>
+                                <div class="item"><a class="languageLink" href="javascript:void(0)"><span>France<i>français</i></span></a></div>
+                                <div class="item"><a class="languageLink" href="javascript:void(0)"><span>Germany<i>Deutsch</i></span></a></div>
+                                <div class="item"><a class="languageLink" href="javascript:void(0)"><span>Hong Kong
+                                        SAR China<i>繁體中文</i></span></a></div>
+                                <div class="item"><a class="languageLink" href="javascript:void(0)"><span>India<i>English</i></span></a></div>
+                                <div class="item"><a class="languageLink" href="javascript:void(0)"><span>Japan<i>日本語</i></span></a></div>
+                                <div class="item"><a class="languageLink" href="javascript:void(0)"><span>Malaysia<i>English</i></span></a></div>
+                                <div class="item"><a class="languageLink" href="javascript:void(0)"><span>Mexico<i>español</i></span></a></div>
+                                <div class="item"><a class="languageLink" href="javascript:void(0)"><span>New
+                                        Zealand<i>English</i></span></a></div>
+                                <div class="item"><a class="languageLink" href="javascript:void(0)"><span>Philippines<i>English</i></span></a></div>
+                                <div class="item"><a class="languageLink" href="javascript:void(0)"><span>Russia<i>русский</i></span></a></div>
+                                <div class="item"><a class="languageLink" href="javascript:void(0)"><span>Singapore<i>English</i></span></a></div>
+                                <div class="item"><a class="languageLink" href="javascript:void(0)"><span>Taiwan<i>繁體中文</i></span></a></div>
+                                <div class="item"><a class="languageLink" href="javascript:void(0)"><span>Thailand<i>ไทย</i></span></a></div>
+                                <div class="item"><a class="languageLink" href="javascript:void(0)"><span>United
+                                        Kingdom<i>English</i></span></a></div>
+                                <div class="item"><a class="languageLink" href="javascript:void(0)"><span>United
+                                        States<i>English</i></span></a></div>
+                                <div class="item"><a class="languageLink" href="javascript:void(0)"><span>Vietnam<i>Tiếng Việt</i></span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="navbutton white" href="javascript:void(0)">Trial</a>
+                    <a class="navbutton white" href="javascript:void(0)">Sign in</a>
+                    <a class="navbutton" href="javascript:void(0)">Sign up</a>
+                </div>
+            </div>
+        </nav>
+        <div id="closedropdown" onclick="closeDropdown()"></div>
+    </header>
+
+
+
+    <div id="overlay" onclick="off()">
+        <div class="close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                <defs>
+                    <filter id="v1gqpjb6jhLf1VDRiltw">
+                        <feFlood flood-color="#D6D6D6" flood-opacity="1" result="floodOut"></feFlood>
+                        <feComposite in="floodOut" in2="SourceGraphic" operator="atop" result="compOut"></feComposite>
+                        <feBlend in="compOut" in2="SourceGraphic"></feBlend>
+                    </filter>
+                </defs>
+                <g filter="url(#v1gqpjb6jhLf1VDRiltw)">
+                    <path fill-rule="evenodd"
+                        d="M8.399 5.999l3.6-3.6-2.4-2.4-3.6 3.6L2.4-.001 0 2.399l3.599 3.6L0 9.599l2.4 2.4 3.599-3.6 3.6 3.6 2.4-2.4-3.6-3.6z">
+                    </path>
+                </g>
+            </svg>
+        </div>
+        <div class="vplayer">
+            <div class="youtube">
+                <div style="width: 100%; height: 100%;">
+                    <div class="youtube-video" style="width: 100%; height: 100%;"><iframe class="preview" frameborder="0" allowfullscreen="1" title="YouTube video player" width="100%" height="100%" src="https://www.youtube.com/embed/BEgOWWW01-w?"></iframe></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div class="slogan">
+            <img src="planet9_img/logo_planet9.webp" />
+            
+            <div class="letters">
+                <img src="planet9_img/tM.webp" alt="" class="style_tM">
+                <img src="planet9_img/tA.webp" alt="" class="style_tA">
+                <img src="planet9_img/tS.webp" alt="" class="style_tS">
+                <img src="planet9_img/tT.webp" alt="" class="style_tT">
+                <img src="planet9_img/tE.webp" alt="" class="style_tE">
+                <img src="planet9_img/tR.webp" alt="" class="style_tR">
+
+                <img src="planet9_img/bY.webp" alt="" class="style_bY">
+                <img src="planet9_img/bO.webp" alt="" class="style_bO">
+                <img src="planet9_img/bU.webp" alt="" class="style_bU">
+                <img src="planet9_img/bR.webp" alt="" class="style_bR">
+                <img src="planet9_img/bP.webp" alt="" class="style_bP">
+                <img src="planet9_img/bL.webp" alt="" class="style_bL">
+                <img src="planet9_img/bA.webp" alt="" class="style_bA">
+                <img src="planet9_img/bY.webp" alt="" class="style_bY2">
+                
+            </div>
+            <a class="button " href=" ">Sign up</a>
+        </div>
+        <div class="videobox" onclick="on() ">
+            <img class="video " src="planet9_img/video.webp" alt/>
+        </div>
+
+        <div class="container content ">
+            <div class="col text_style text1 ">
+                <div>
+                    <h2>CONNECT</h2>
+                    <h3>Group Up with Fellow Gamers</h3>
+                    <p>Join PLANET9's active community. Here, you will meet with fellow gamers who are on the same path as you. Work together to exceed where others have failed.</p>
+                </div>
+            </div>
+            <div class="col text_style text2 ">
+                <div>
+                    <h2>BATTLE</h2>
+                    <h3>From Zero to Hero</h3>
+                    <p>Every pro starts somewhere. From everyday online scrim to international tournament, PLANET9 provides all kinds of tournaments to help you every step of the way.</p>
+                </div>
+            </div>
+            <div class="col text_style text3 ">
+                <div>
+                    <h2>EVOLVE</h2>
+                    <h3>Learn From Stats and the Best</h3>
+                    <p>Battling your way through the tiers doesn't need to be a solo journey. PLANET9 uses every game stat available to analyze your performance and offer coaches to guide your climbing.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="signUp ">
+            <h2>LANDING ON PLANET9</h2>
+            <a class="button " href="javascript:void(0) ">Sign up</a>
+        </div>
+
+        <footer class="myFooter ">
+            <div>
+                <img src="planet9_img/logo_footer.webp " />
+                <span>© 2020 Dropzone (HK) Limited</span>
+            </div>
+            <span>Service@planet9.gg</span>
+        </footer>
+    </div>
+
+    <script>
+        function on() {
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        function off() {
+            document.getElementById("overlay").style.display = "none";
+
+            let link = document.querySelector('.preview'); // get iframe class 
+            let video_src = link.getAttribute('src');
+
+            $('.youtube-video').children('iframe').attr('src', ''); // set iframe parent div value null 
+            $('.youtube-video').children('iframe').attr('src', video_src); // set iframe src again it works perfect
+
+        }
+
+        var dropdown_status = false;
+
+        function openDropdown() {
+            if (dropdown_status == false) {
+                document.querySelector('.dropdark').style.display = "block ";
+                document.querySelector('#closedropdown').style.display = "block ";
+                dropdown_status = true;
+            } else {
+                document.querySelector('.dropdark').style.display = "none ";
+                dropdown_status = false;
+            }
+        }
+
+        function closeDropdown() {
+            document.querySelector('.dropdark').style.display = "none ";
+            document.querySelector('#closedropdown').style.display = "none ";
+        }
+    </script>
+    <script src="stickyHeader.js"></script>
+</body>
+
+</html>
